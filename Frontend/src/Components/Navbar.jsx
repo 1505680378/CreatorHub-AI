@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useClerk, useUser, UserButton } from '@clerk/clerk-react'
+import { assets } from '../assets/assets'
 
 const Navbar = () => {
 
@@ -16,7 +17,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className='flex items-center gap-2 cursor-pointer' onClick={() => navigate('/')}>
-          <img src="src/assets/CreatorHubLogo.svg" alt="logo" className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12'/>
+          <img src={assets.logo} alt="logo" className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12'/>
           <h3 className='text-lg sm:text-xl md:text-2xl'>CreatorHub AI</h3>
         </div>
 

@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
                 <div className="md:max-w-96">
                     <div className="flex gap-2 items-center"> 
-                        <img alt="" class="h-11" src="src/assets/CreatorHubLogo.svg" />
+                        <img alt="logo_image" class="h-11" src={assets.logo} />
                         <h1 className="text-gray-300 text-3xl">CreatorHub AI</h1>
                     </div>
                     <p className="mt-6 text-sm">
