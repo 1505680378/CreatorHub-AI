@@ -12,13 +12,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: [
-        process.env.FRONTEND_URL, // deployed frontend
-        'http://localhost:5173'   // local dev
-    ],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'clerk-token'],
-    credentials: true
+  origin: [
+    process.env.FRONTEND_URL,
+    'http://localhost:5173'
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 app.use(express.json());
