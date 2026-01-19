@@ -17,7 +17,7 @@ app.use(cors({
         'http://localhost:5173'   // local dev
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'clerk-token'],
     credentials: true
 }));
 
